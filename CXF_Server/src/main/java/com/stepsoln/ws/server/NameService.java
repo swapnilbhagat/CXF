@@ -3,14 +3,19 @@
  */
 package com.stepsoln.ws.server;
 
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
 import javax.jws.WebService;
 
 /**
+ * WebService Endpoint for NameService.
+ * 
  * @author SwapnilB
  * 
  */
 @WebService
 public interface NameService
 {
-	public String getFullName(String firstName, String lastName);
+	@WebMethod
+	public String getFullName(@WebParam(name = "firstName") String firstName, @WebParam(name = "lastName") String lastName);
 }

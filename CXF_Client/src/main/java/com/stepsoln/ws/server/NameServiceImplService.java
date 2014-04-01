@@ -17,33 +17,33 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "NameService", targetNamespace = "http://server.ws.stepsoln.com/", wsdlLocation = "http://localhost:8080/ws/nameService?wsdl")
-public class NameService_Service
+@WebServiceClient(name = "NameServiceImplService", targetNamespace = "http://server.ws.stepsoln.com/", wsdlLocation = "http://localhost:8080/ws/nameService?wsdl")
+public class NameServiceImplService
     extends Service
 {
 
-    private final static URL NAMESERVICE_WSDL_LOCATION;
-    private final static Logger logger = Logger.getLogger(com.stepsoln.ws.server.NameService_Service.class.getName());
+    private final static URL NAMESERVICEIMPLSERVICE_WSDL_LOCATION;
+    private final static Logger logger = Logger.getLogger(com.stepsoln.ws.server.NameServiceImplService.class.getName());
 
     static {
         URL url = null;
         try {
             URL baseUrl;
-            baseUrl = com.stepsoln.ws.server.NameService_Service.class.getResource(".");
+            baseUrl = com.stepsoln.ws.server.NameServiceImplService.class.getResource(".");
             url = new URL(baseUrl, "http://localhost:8080/ws/nameService?wsdl");
         } catch (MalformedURLException e) {
             logger.warning("Failed to create URL for the wsdl Location: 'http://localhost:8080/ws/nameService?wsdl', retrying as a local file");
             logger.warning(e.getMessage());
         }
-        NAMESERVICE_WSDL_LOCATION = url;
+        NAMESERVICEIMPLSERVICE_WSDL_LOCATION = url;
     }
 
-    public NameService_Service(URL wsdlLocation, QName serviceName) {
+    public NameServiceImplService(URL wsdlLocation, QName serviceName) {
         super(wsdlLocation, serviceName);
     }
 
-    public NameService_Service() {
-        super(NAMESERVICE_WSDL_LOCATION, new QName("http://server.ws.stepsoln.com/", "NameService"));
+    public NameServiceImplService() {
+        super(NAMESERVICEIMPLSERVICE_WSDL_LOCATION, new QName("http://server.ws.stepsoln.com/", "NameServiceImplService"));
     }
 
     /**
