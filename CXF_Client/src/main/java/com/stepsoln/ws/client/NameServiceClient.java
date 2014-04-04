@@ -9,6 +9,8 @@ import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 import com.stepsoln.ws.server.NameService;
 
 /**
+ * Client to test WebService using CXF.
+ * 
  * @author SwapnilB
  * 
  */
@@ -25,6 +27,6 @@ public class NameServiceClient
 		NameService nameService = (NameService) factory.create();
 		String fullName = nameService.getFullName("Swapnil", "Bhagat");
 		System.out.println(fullName);
-		
+
 	}
 }

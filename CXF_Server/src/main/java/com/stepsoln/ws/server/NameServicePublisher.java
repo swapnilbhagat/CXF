@@ -6,6 +6,8 @@ package com.stepsoln.ws.server;
 import javax.xml.ws.Endpoint;
 
 /**
+ * Publisher of WebService.
+ * 
  * @author SwapnilB
  * 
  */

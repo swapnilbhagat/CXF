@@ -8,7 +8,7 @@ import javax.jws.WebParam;
 import javax.jws.WebService;
 
 /**
- * WebService Endpoint for NameService.
+ * WebService Endpoint.
  * 
  * @author SwapnilB
  * 

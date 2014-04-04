@@ -6,7 +6,7 @@ package com.stepsoln.ws.server;
 import javax.jws.WebService;
 
 /**
- * WebService Implementation for NameService.
+ * WebService Implementation.
  * 
  * @author SwapnilB
  * 
